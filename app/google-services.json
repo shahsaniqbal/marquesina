@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "753947046678",
+    "firebase_url": "https://marqeusina-default-rtdb.firebaseio.com",
+    "project_id": "marqeusina",
+    "storage_bucket": "marqeusina.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753947046678:android:efc11f39d42bcfa0c25637",
+        "android_client_info": {
+          "package_name": "com.bahriafyp.marqeusina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753947046678-l73khr1khjbf1ni3ki6ua0a9nqg7de3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_T6XylTycJgCSCvgicDH9zeWcl1pm-E0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753947046678-l73khr1khjbf1ni3ki6ua0a9nqg7de3p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
