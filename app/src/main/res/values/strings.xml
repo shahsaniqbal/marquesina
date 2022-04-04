@@ -4,4 +4,13 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="register_as_owner">Register As Owner</string>
     <string name="register_as_finder">Register As Finder</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="don_t_have_an_account_signup">Don\'t have an account - SignUp</string>
+    <string name="full_name">Full Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="login_register_as_owner">LoginRegister As Owner</string>
+    <string name="login_register_as_finder">LoginRegister As Finder</string>
+    <string name="already_have_account_signin">already have account? SignIn</string>
 </resources>

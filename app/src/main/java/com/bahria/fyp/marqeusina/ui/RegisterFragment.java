@@ -38,6 +38,16 @@ public class RegisterFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_register, container, false);
     }
 
+
+
+
+
+
+
+
+
+    ///////////////////////////////////////////////////////////////////////////
+
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -49,13 +59,14 @@ public class RegisterFragment extends Fragment {
         registerAsFinder=view.findViewById(R.id.register_as_finder);
 
 
+
         //registerAsOwner Sider
         reginsterAsOwner.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
                 requireActivity().getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.register_fragment,new RegisterAsOwnerFragment()).commit();
+                        .replace(R.id.register_fragment,new LoginFragment()).commit();
             }
         });
 

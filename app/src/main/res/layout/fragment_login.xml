@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.LoginFragment">
+    tools:context=".ui.LoginFragment"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,7 +44,7 @@
                     android:elevation="10dp">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="vertical"
@@ -53,9 +54,8 @@
                             android:id="@+id/edx_login_email"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Email"
+                            android:hint="@string/email"
                             android:inputType="textEmailAddress"
-
                             android:paddingHorizontal="4dp"
                             android:paddingVertical="8dp" />
 
@@ -65,7 +65,7 @@
                             android:layout_height="wrap_content"
 
                             android:layout_marginTop="16dp"
-                            android:hint="Password"
+                            android:hint="@string/password"
                             android:inputType="textPassword"
                             android:paddingHorizontal="4dp"
                             android:paddingVertical="8dp" />
@@ -87,12 +87,12 @@
                             android:layout_marginVertical="4dp"
                             android:paddingHorizontal="16dp"
                             android:paddingVertical="8dp"
-                            android:text="Forgot Password ?"
+                            android:text="@string/forgot_password"
                             android:textAlignment="center"
                             android:textColor="@color/white"
-                            android:textSize="10dp"
+                            android:textSize="10sp"
                             android:visibility="gone"
-                            tools:ignore="RtlCompat" />
+                            tools:ignore="RtlCompat,SmallSp" />
 
 
                         <com.google.android.material.card.MaterialCardView
@@ -102,13 +102,14 @@
                             android:layout_marginTop="16dp"
                             android:clickable="true"
                             android:padding="8dp"
-                            app:cardElevation="8dp">
+                            app:cardElevation="8dp"
+                            android:focusable="true">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_margin="10dp"
-                                android:text="Don't have an account - SignUp" />
+                                android:text="@string/don_t_have_an_account_signup" />
 
                         </com.google.android.material.card.MaterialCardView>
 
