@@ -9,12 +9,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.bahria.fyp.marqeusina.R;
+import com.bahria.fyp.marqeusina.ui.Loaders.RegisterAsFinderFragment;
 
 public class RegisterFragment extends Fragment {
     //Declare 2 MaterialButtons here
-
+    Button reginsterAsOwner,registerAsFinder;
 
     public RegisterFragment() {
         // Required empty public constructor
@@ -40,7 +42,43 @@ public class RegisterFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Do here Ahsan
+
+        // Do here Sohaib
         //Initialize here
+        reginsterAsOwner=view.findViewById(R.id.register_as_owner);
+        registerAsFinder=view.findViewById(R.id.register_as_finder);
+
+
+        //registerAsOwner Sider
+        reginsterAsOwner.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                requireActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.register_fragment,new RegisterAsOwnerFragment()).commit();
+            }
+        });
+
+
+
+        //registerAsFinder side
+        registerAsFinder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                requireActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.register_fragment,new RegisterAsFinderFragment()).commit();
+
+            }
+        });
+
+
+
+
     }
+
+
+
+
+
 }
