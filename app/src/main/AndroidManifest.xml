@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MarqeuSina">
         <activity
+            android:name=".ui.finder.activities.MainActivityFinder"
+            android:exported="false" />
+        <activity
             android:name=".ui.admin.activities.MainActivityOwner"
             android:exported="false" />
         <activity

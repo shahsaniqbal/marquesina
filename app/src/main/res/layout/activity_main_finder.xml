@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.admin.activities.MainActivityOwner">
-
+    tools:context=".ui.finder.activities.MainActivityFinder">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="Main Activity Owner"/>
+        android:text="Main Activity Finder"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

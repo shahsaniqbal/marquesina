@@ -5,7 +5,7 @@ public class FirebaseDataKeys {
     final String USERS = "Users";
     final String ITEMS = "Items";
     final String LOCATIONS = "CityAreasForDelivery";
-    final static public String STORAGE_BUCKET_ADDRESS = "";
+    final static public String STORAGE_BUCKET_ADDRESS = "gs://marqeusina.appspot.com";
 
     public String getMenuRef(){
         return CATEGORIES;
