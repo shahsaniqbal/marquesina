@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/owner_nevigation_profile"
+        android:icon="@drawable/ic_baseline_account_profille"
+        android:title="@string/profile"
+        />
+    <item android:id="@+id/owner_nevigation_packeges"
+        android:icon="@drawable/ic_baseline_local_packegs"
+        android:title="@string/packeges"
+        />
+    <item android:id="@+id/owner_nevigation_all_customers"
+        android:icon="@drawable/ic_baseline_calendar_booked_customers"
+        android:title="@string/all_customers"
+        />
+    <item android:id="@+id/owner_nevigation_bookings"
+        android:icon="@drawable/ic_baseline_book_booking"
+        android:title="@string/bookings"
+        />
+    <item android:id="@+id/owner_nevigation_notification"
+        android:icon="@drawable/ic_baseline_notification_important_24"
+        android:title="@string/notification"
+        />
+</menu>

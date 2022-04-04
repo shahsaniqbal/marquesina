@@ -13,4 +13,9 @@
     <string name="login_register_as_owner">LoginRegister As Owner</string>
     <string name="login_register_as_finder">LoginRegister As Finder</string>
     <string name="already_have_account_signin">already have account? SignIn</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="bookings">Bookings</string>
+    <string name="all_customers">All Customers</string>
+    <string name="packeges">packeges</string>
 </resources>
