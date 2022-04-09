@@ -8,16 +8,18 @@
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1275" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/activity_login_navigator.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/activity_main_finder.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/activity_main_owner.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/activity_main_owner.xml" value="0.25" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/activity_splash.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_login.xml" value="0.2" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_owner___nevigation__profile.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_owner_navigation_notificationa.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_owner_nevigation_all_customers.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_owner_nevigation_packeges.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_register.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_register_as_finder.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_register_as_owner.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/generic_fragment_post_register.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/sadaat_waiting_progress_layout.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/sadaat_waiting_progress_layout.xml" value="0.5" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/menu/my_navigation_items.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/menu/owner_activity_nevigation_menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.139" />

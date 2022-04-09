@@ -18,4 +18,6 @@
     <string name="bookings">Bookings</string>
     <string name="all_customers">All Customers</string>
     <string name="packeges">packeges</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="dear_sohaib">Dear Sohaib</string>
 </resources>

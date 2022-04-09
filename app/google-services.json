@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "753947046678",
-    "firebase_url": "https://marqeusina-default-rtdb.firebaseio.com",
-    "project_id": "marqeusina",
-    "storage_bucket": "marqeusina.appspot.com"
+    "project_number": "206158729310",
+    "firebase_url": "https://maqeusina-default-rtdb.firebaseio.com",
+    "project_id": "maqeusina",
+    "storage_bucket": "maqeusina.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:753947046678:android:efc11f39d42bcfa0c25637",
+        "mobilesdk_app_id": "1:206158729310:android:9dc78be48b3ffb5713e4cf",
         "android_client_info": {
-          "package_name": "com.bahriafyp.marqeusina"
+          "package_name": "com.bahria.fyp.marqeusina"
         }
       },
       "oauth_client": [
         {
-          "client_id": "753947046678-l73khr1khjbf1ni3ki6ua0a9nqg7de3p.apps.googleusercontent.com",
+          "client_id": "206158729310-l5di94dpmfas79bpeom4ucqd9dpcmmbu.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD_T6XylTycJgCSCvgicDH9zeWcl1pm-E0"
+          "current_key": "AIzaSyCsG-jp16E4iF5I2TK3_cn4sSX8C3RIEsM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "753947046678-l73khr1khjbf1ni3ki6ua0a9nqg7de3p.apps.googleusercontent.com",
+              "client_id": "206158729310-l5di94dpmfas79bpeom4ucqd9dpcmmbu.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

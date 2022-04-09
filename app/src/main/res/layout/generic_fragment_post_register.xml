@@ -55,8 +55,6 @@
             android:id="@+id/edx_add_users_full_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:drawableLeft=""
-            android:drawablePadding="8dp"
             android:hint="Full Name"
             android:padding="8dp"
             android:textColor="@color/black"
