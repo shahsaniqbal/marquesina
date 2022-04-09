@@ -45,7 +45,7 @@ public class PostRegisterFragment extends Fragment implements View.OnClickListen
     private static final int IMAGE_SEL_REQ = 656;
     String imagePath = "";
     Uri imageReference;
-    String selectedUserType = UserTypes.Customer;
+    String selectedUserType = UserTypes.Admin;
     private UserModel model;
     //Views
     private ImageView userDP;
