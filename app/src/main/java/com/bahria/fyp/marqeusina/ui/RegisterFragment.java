@@ -86,7 +86,8 @@ public class RegisterFragment extends Fragment {
                             edxName.getText().toString(),
                             edxEmail.getText().toString(),
                             edxMobile.getText().toString(),
-                            null
+                            null,
+                            ""
                     );
 
                     getActivity()

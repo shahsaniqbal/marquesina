@@ -15,7 +15,7 @@
         android:padding="20dp"
         >
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButtonMarqueeProfileImage"
             android:layout_width="118dp"
             android:layout_height="134dp"
@@ -38,14 +38,13 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextMarqueeDiscription"
             android:layout_width="match_parent"
-            android:layout_height="146dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="@string/enter_marquee_details"
-            android:inputType="textPersonName"
+            android:inputType="textMultiLine"
             android:paddingHorizontal="4dp"
-            android:paddingVertical="8dp"
-            android:textAlignment="center" />
+            android:paddingVertical="8dp" />
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -53,7 +52,7 @@
             android:id="@+id/editTextMarqueeAddress"
             android:ems="10"
             android:hint="@string/enter_marquee_address"
-            android:inputType="textPersonName"
+            android:inputType="textMultiLine"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="4dp"
             android:paddingVertical="8dp"
@@ -66,7 +65,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/number_of_guests_marquee_can_handel"
-            android:inputType="textPersonName"
+            android:inputType="numberDecimal"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="4dp"
             android:paddingVertical="8dp"
@@ -77,8 +76,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="Enter PerHead Price"
-            android:inputType="number"
+            android:hint="Price per head"
+            android:inputType="numberDecimal"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="4dp"
             android:paddingVertical="8dp"
@@ -90,7 +89,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:hint="@string/only_hall_booking_price"
-            android:inputType="textPersonName"
+            android:inputType="numberDecimal"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="4dp"
             android:paddingVertical="8dp"

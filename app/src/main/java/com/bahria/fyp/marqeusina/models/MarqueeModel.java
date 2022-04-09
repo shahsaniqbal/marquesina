@@ -1,15 +1,23 @@
-package com.bahria.fyp.marqeusina.ui.admin.classes;
+package com.bahria.fyp.marqeusina.models;
 
-public class ModelOwnerMarqueeRegistration {
+public class MarqueeModel {
 
-    String img, marqueeName, marqueeDescription,marqueeAddress, numberOfGuestsCanHandle, perHeadPrice, onlyHallPrice;
+    String docID;
+    String imagePath;
+    String marqueeName;
+    String marqueeDescription;
+    String marqueeAddress;
+    String numberOfGuestsCanHandle;
+    String perHeadPrice;
+    String onlyHallPrice;
+    String ownerID;
 
-
-    public ModelOwnerMarqueeRegistration() {
+    public MarqueeModel() {
     }
 
-    public ModelOwnerMarqueeRegistration(String img, String marqueeName, String marqueeDescription, String marqueeAddress, String numberOfGuestsCanHandle, String perHeadPrice, String onlyHallPrice) {
-        this.img = img;
+    public MarqueeModel(String docID, String imagePath, String marqueeName, String marqueeDescription, String marqueeAddress, String numberOfGuestsCanHandle, String perHeadPrice, String onlyHallPrice) {
+        this.docID = docID;
+        this.imagePath = imagePath;
         this.marqueeName = marqueeName;
         this.marqueeDescription = marqueeDescription;
         this.marqueeAddress = marqueeAddress;
@@ -18,13 +26,20 @@ public class ModelOwnerMarqueeRegistration {
         this.onlyHallPrice = onlyHallPrice;
     }
 
-
-    public String getImg() {
-        return img;
+    public String getDocID() {
+        return docID;
     }
 
-    public void setImg(String img) {
-        this.img = img;
+    public void setDocID(String docID) {
+        this.docID = docID;
+    }
+
+    public String getImagePath() {
+        return imagePath;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 
     public String getMarqueeName() {

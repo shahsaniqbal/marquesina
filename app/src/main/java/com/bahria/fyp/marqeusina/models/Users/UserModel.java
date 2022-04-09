@@ -1,5 +1,7 @@
 package com.bahria.fyp.marqeusina.models.Users;
 
+import com.bahria.fyp.marqeusina.models.MarqueeModel;
+
 public class UserModel {
 
     private String UID;
@@ -8,20 +10,21 @@ public class UserModel {
     private String emailAddress;
     private String mobileNumber;
     private UserOtherDetailsModel details;
-
+    private String marqueeDOCID;
 
     public UserModel() {
 
 
     }
 
-    public UserModel(String UID, String userType, String fullName, String emailAddress, String mobileNumber, UserOtherDetailsModel details) {
+    public UserModel(String UID, String userType, String fullName, String emailAddress, String mobileNumber, UserOtherDetailsModel details, String marqueeDOCID) {
         this.UID = UID;
-        UserType = userType;
+        this.UserType = userType;
         this.fullName = fullName;
         this.emailAddress = emailAddress;
         this.mobileNumber = mobileNumber;
         this.details = details;
+        this.marqueeDOCID = marqueeDOCID;
     }
 
     public String getUID() {

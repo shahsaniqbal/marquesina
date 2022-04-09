@@ -28,6 +28,7 @@ import com.bahria.fyp.marqeusina.temp.FirebaseDataKeys;
 import com.bahria.fyp.marqeusina.temp.UserLive;
 import com.bahria.fyp.marqeusina.temp.UserTypes;
 import com.bahria.fyp.marqeusina.ui.Loaders.LoadingDialogue;
+import com.bahria.fyp.marqeusina.ui.admin.fragments.OwnerFragmentProfileRegistrationForm;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -126,7 +127,7 @@ public class PostRegisterFragment extends Fragment implements View.OnClickListen
                                 model.setUID(Objects.requireNonNull(task.getResult().getUser()).getUid());
                                 FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
                                 firebaseFirestore
-                                        .collection(new FirebaseDataKeys().getUsersRef())
+                                        .collection(FirebaseDataKeys.USERS)
                                         .document(model.getUID())
                                         .set(model)
                                         .addOnCompleteListener(task1 -> {
@@ -214,7 +215,7 @@ public class PostRegisterFragment extends Fragment implements View.OnClickListen
                             model.setUID(Objects.requireNonNull(task.getResult().getUser()).getUid());
                             FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
                             firebaseFirestore
-                                    .collection(new FirebaseDataKeys().getUsersRef())
+                                    .collection(FirebaseDataKeys.USERS)
                                     .document(model.getUID())
                                     .set(model)
                                     .addOnCompleteListener(task1 -> {
@@ -222,12 +223,14 @@ public class PostRegisterFragment extends Fragment implements View.OnClickListen
                                             Toast.makeText(requireActivity(), "User Registration Successful", Toast.LENGTH_SHORT).show();
                                             UserLive.currentLoggedInUser = model;
 
-                                            Intent i = new LoginIntentHandler(PostRegisterFragment.this.requireActivity(), model.getUserType());
-
+                                            getActivity()
+                                                    .getSupportFragmentManager()
+                                                    .beginTransaction()
+                                                    .addToBackStack("post_register")
+                                                    .replace(R.id.fragment_manager_at_login, OwnerFragmentProfileRegistrationForm.newInstance(model.getUID(), model.getUserType()))
+                                                    .commit();
                                             loadingDialogue.dismiss();
 
-                                            startActivity(i);
-                                            requireActivity().finish();
 
                                         } else {
                                             Toast.makeText(requireActivity(), "" + task1.getException().getMessage(), Toast.LENGTH_SHORT).show();

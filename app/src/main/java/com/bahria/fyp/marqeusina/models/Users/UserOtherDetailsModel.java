@@ -3,7 +3,6 @@ package com.bahria.fyp.marqeusina.models.Users;
 
 public class UserOtherDetailsModel {
     private String imageReference;
-    //private AddressModel address;
 
     public UserOtherDetailsModel() {
     }
