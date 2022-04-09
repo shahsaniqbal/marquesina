@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.admin.fragments.OwnerFragmentNavigationProfile"
-    android:background="@color/purple_200"
-    >
+    tools:context=".ui.admin.fragments.OwnerFragmentProfileRegistrationForm">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,32 +15,30 @@
         android:padding="20dp"
         >
 
-        <ImageView
-            android:id="@+id/imageButtonMarqueeImageProfile"
+        <ImageButton
+            android:id="@+id/imageButtonMarqueeProfileImage"
             android:layout_width="118dp"
             android:layout_height="134dp"
             android:layout_gravity="center"
             tools:src="@tools:sample/avatars" />
 
-
-        <com.google.android.material.textview.MaterialTextView
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMarqueeName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/TexViewProfileMarqueeName"
-            android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="@string/marquee_name"
             android:inputType="textPersonName"
+            android:layout_marginTop="10dp"
             android:paddingHorizontal="4dp"
             android:paddingVertical="8dp"
-            android:textAlignment="center"
             />
 
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/TexViewProfileMarqueeDetails"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMarqueeDiscription"
             android:layout_width="match_parent"
-            android:layout_height="163dp"
+            android:layout_height="146dp"
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="@string/enter_marquee_details"
@@ -49,20 +47,21 @@
             android:paddingVertical="8dp"
             android:textAlignment="center" />
 
-        <com.google.android.material.textview.MaterialTextView
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/editTextMarqueeAddress"
             android:ems="10"
-            android:hint="@string/marquee_address"
+            android:hint="@string/enter_marquee_address"
             android:inputType="textPersonName"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="4dp"
             android:paddingVertical="8dp"
-            android:id="@+id/TexViewProfileMarqueeAddress"
             />
 
+
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TexViewProfileMarqueeNumberOfGuests"
+            android:id="@+id/editTextMarqueeNumberOfGuests"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -74,11 +73,11 @@
             />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TexViewProfileMarqueePerHeadPrice"
+            android:id="@+id/editTextMarqueePerHeadPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="@string/enter_perhead_price"
+            android:hint="Enter PerHead Price"
             android:inputType="number"
             android:layout_marginTop="10dp"
             android:paddingHorizontal="4dp"
@@ -86,7 +85,7 @@
             />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/TexViewProfileMarqueeHallBookingPrice"
+            android:id="@+id/editTextMarqueeHallBookingPrice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -98,8 +97,13 @@
             />
 
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ButtonMarqueeRegisterMarquee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_marquee"
+            android:layout_marginTop="10dp"/>
 
 
     </LinearLayout>
-
 </FrameLayout>

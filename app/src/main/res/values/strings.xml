@@ -20,4 +20,13 @@
     <string name="packeges">packeges</string>
     <string name="splash_screen">Splash Screen</string>
     <string name="dear_sohaib">Dear Sohaib</string>
+    <string name="enter_marquee_details">Enter Marquee Details</string>
+    <string name="only_hall_booking_price">Only Hall Booking Price</string>
+    <string name="login">Login</string>
+    <string name="register_marquee">Register Marquee</string>
+    <string name="number_of_guests_marquee_can_handel">Number of Guests Marquee can Handel</string>
+    <string name="marquee_name">Marquee Name</string>
+    <string name="enter_marquee_address">Enter Marquee Address</string>
+    <string name="marquee_address">Marquee Address</string>
+    <string name="enter_perhead_price">Enter PerHead Price</string>
 </resources>

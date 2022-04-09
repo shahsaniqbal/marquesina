@@ -3,20 +3,38 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/drawable/ic_baseline_account_profile.xml" value="0.139" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/drawable/ic_baseline_local_packegs.xml" value="0.139" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1275" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/activity_login_navigator.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/activity_main_finder.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/activity_main_owner.xml" value="0.25" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/activity_splash.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_login.xml" value="0.2" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_owner___nevigation__profile.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_owner_navigation_notificationa.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_owner_nevigation_all_customers.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_owner_nevigation_packeges.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_owner_profile_registration_form.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_register.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_register_as_finder.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/fragment_register_as_owner.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/generic_fragment_post_register.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/layout/sadaat_waiting_progress_layout.xml" value="0.5" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/menu/my_navigation_items.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/menu/owner_activity_nevigation_menu.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/Xeroo/AndroidStudioProjects/marquesina/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.139" />
         <entry key="app/src/main/res/layout/activity_login_navigator.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_main_finder.xml" value="0.34322916666666664" />
         <entry key="app/src/main/res/layout/activity_main_owner.xml" value="0.23333333333333334" />
-        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.23981481481481481" />
-        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/fragment_register_as_finder.xml" value="0.40677083333333336" />
+        <entry key="app/src/main/res/layout/fragment_register.xml" value="0.23333333333333334" />
         <entry key="app/src/main/res/layout/fragment_register_as_owner.xml" value="0.40677083333333336" />
-        <entry key="app/src/main/res/layout/generic_fragment_post_register.xml" value="0.335" />
         <entry key="app/src/main/res/layout/sadaat_waiting_progress_layout.xml" value="0.335" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
