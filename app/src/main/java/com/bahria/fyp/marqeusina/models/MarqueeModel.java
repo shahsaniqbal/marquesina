@@ -15,7 +15,7 @@ public class MarqueeModel {
     public MarqueeModel() {
     }
 
-    public MarqueeModel(String docID, String imagePath, String marqueeName, String marqueeDescription, String marqueeAddress, String numberOfGuestsCanHandle, String perHeadPrice, String onlyHallPrice) {
+    public MarqueeModel(String docID, String imagePath, String marqueeName, String marqueeDescription, String marqueeAddress, String numberOfGuestsCanHandle, String perHeadPrice, String onlyHallPrice, String ownerID) {
         this.docID = docID;
         this.imagePath = imagePath;
         this.marqueeName = marqueeName;
@@ -24,6 +24,15 @@ public class MarqueeModel {
         this.numberOfGuestsCanHandle = numberOfGuestsCanHandle;
         this.perHeadPrice = perHeadPrice;
         this.onlyHallPrice = onlyHallPrice;
+        this.ownerID = ownerID;
+    }
+
+    public String getOwnerID() {
+        return ownerID;
+    }
+
+    public void setOwnerID(String ownerID) {
+        this.ownerID = ownerID;
     }
 
     public String getDocID() {

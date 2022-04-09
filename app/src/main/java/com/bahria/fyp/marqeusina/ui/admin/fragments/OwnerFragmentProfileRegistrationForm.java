@@ -113,16 +113,26 @@ public class OwnerFragmentProfileRegistrationForm extends Fragment {
     }
 
     private void storeDataInModel() {
-        // TODO Implement this method
 
-        model.setImagePath(imagePath);
-        model.setMarqueeAddress(marqueeAddress.getText().toString());
+        if (analyzeInputs(true)) {
 
-        // Set Everything in Model through model's setter methods
+            model.setImagePath(imagePath);
+            model.setMarqueeAddress(marqueeAddress.getText().toString());
+            model.setMarqueeDescription(marqueeDetails.getText().toString());
+            model.setMarqueeName(marqueeName.getText().toString());
+            model.setNumberOfGuestsCanHandle(marqueeNumberOfGuests.getText().toString());
+            model.setOnlyHallPrice(marqueeOnlyHallPrice.getText().toString());
+            model.setPerHeadPrice(marqueePerHeadPrice.getText().toString());
+            model.setOwnerID(uid);
+            model.setDocID("");
+
+            // Set Everything in Model through model's setter methods
 
 
-        uploadDetails();
+            uploadDetails();
+        }
     }
+
 
     private void uploadDetails() {
         FirebaseFirestore
@@ -260,4 +270,9 @@ public class OwnerFragmentProfileRegistrationForm extends Fragment {
         }
     }
 
+
+    private boolean analyzeInputs(boolean b) {
+        //TODO The purpose of this method is to validate Text Inputs
+        return b;
+    }
 }
