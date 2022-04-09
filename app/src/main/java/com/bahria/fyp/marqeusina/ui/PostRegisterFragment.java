@@ -103,11 +103,14 @@ public class PostRegisterFragment extends Fragment implements View.OnClickListen
                     IMAGE_SEL_REQ);
         });
 
-        radioGroup.setOnCheckedChangeListener((radioGroup, i) -> {
-            if (radioGroup.getId() == rdbFinder.getId()) {
-                selectedUserType = UserTypes.Customer;
-            } else if (radioGroup.getId() == rdbOwner.getId()) {
-                selectedUserType = UserTypes.Admin;
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                if (i == rdbFinder.getId()) {
+                    selectedUserType = UserTypes.Customer;
+                } else if (i == rdbOwner.getId()) {
+                    selectedUserType = UserTypes.Admin;
+                }
             }
         });
 

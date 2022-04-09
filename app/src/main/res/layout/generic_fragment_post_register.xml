@@ -120,15 +120,15 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Finder"
-                    android:checked="true"/>
+                    android:text="Finder"/>
 
                 <RadioButton
                     android:id="@+id/rdbOwner"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Owwner"/>
+                    android:text="Owner"
+                    android:checked="true"/>
 
             </RadioGroup>
 

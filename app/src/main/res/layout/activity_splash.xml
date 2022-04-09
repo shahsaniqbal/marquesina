@@ -10,16 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="50dp"
-        android:background="@color/pink_light"
         android:orientation="vertical"
         android:gravity="center"
         >
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/splash_screen"
+            android:text="@string/app_name"
             android:textStyle="bold"
-            android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="48sp"
             android:textAlignment="center"
             />
 
