@@ -21,9 +21,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.bahria.fyp.marqeusina.R;
-import com.bahria.fyp.marqeusina.handlers.LoginIntentHandler;
 import com.bahria.fyp.marqeusina.models.Users.UserModel;
-import com.bahria.fyp.marqeusina.models.Users.UserOtherDetailsModel;
 import com.bahria.fyp.marqeusina.temp.FirebaseDataKeys;
 import com.bahria.fyp.marqeusina.temp.UserLive;
 import com.bahria.fyp.marqeusina.temp.UserTypes;
@@ -41,7 +39,7 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.UUID;
 
-public class PostRegisterFragment extends Fragment implements View.OnClickListener {
+public class PostRegisterFragment extends Fragment {
 
     private static final int IMAGE_SEL_REQ = 656;
     String imagePath = "";
@@ -104,14 +102,11 @@ public class PostRegisterFragment extends Fragment implements View.OnClickListen
                     IMAGE_SEL_REQ);
         });
 
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                if (i == rdbFinder.getId()) {
-                    selectedUserType = UserTypes.Customer;
-                } else if (i == rdbOwner.getId()) {
-                    selectedUserType = UserTypes.Admin;
-                }
+        radioGroup.setOnCheckedChangeListener((radioGroup, i) -> {
+            if (i == rdbFinder.getId()) {
+                selectedUserType = UserTypes.Customer;
+            } else if (i == rdbOwner.getId()) {
+                selectedUserType = UserTypes.Admin;
             }
         });
 
@@ -135,21 +130,21 @@ public class PostRegisterFragment extends Fragment implements View.OnClickListen
                                                 Toast.makeText(requireActivity(), "User Registration Successful", Toast.LENGTH_SHORT).show();
                                                 UserLive.currentLoggedInUser = model;
 
-                                                Intent i = new LoginIntentHandler(PostRegisterFragment.this.requireActivity(), model.getUserType());
-
-                                                loadingDialogue.dismiss();
-
-                                                startActivity(i);
-                                                requireActivity().finish();
+                                                requireActivity()
+                                                        .getSupportFragmentManager()
+                                                        .beginTransaction()
+                                                        .addToBackStack("post_register")
+                                                        .replace(R.id.fragment_manager_at_login, OwnerFragmentProfileRegistrationForm.newInstance(model.getUID(), model.getUserType()))
+                                                        .commit();
 
                                             } else {
-                                                Toast.makeText(requireActivity(), "" + task1.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                                                loadingDialogue.dismiss();
+                                                Toast.makeText(requireActivity(), "" + Objects.requireNonNull(task1.getException()).getMessage(), Toast.LENGTH_SHORT).show();
                                             }
+                                            loadingDialogue.dismiss();
                                         });
 
                             } else {
-                                Toast.makeText(requireActivity(), "Error Signing UP \n" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(requireActivity(), "Error Signing UP \n" + Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
                                 loadingDialogue.dismiss();
 
                             }
@@ -194,58 +189,6 @@ public class PostRegisterFragment extends Fragment implements View.OnClickListen
         FirebaseStorage storage = FirebaseStorage.getInstance(FirebaseDataKeys.STORAGE_BUCKET_ADDRESS);
         storageReference = storage.getReference();
 
-    }
-
-    @Override
-    public void onClick(View view) {
-        if (analyzeInputsIfEmpty(true)) {
-
-            model.setDetails(
-                    new UserOtherDetailsModel(
-                            imagePath
-                    ));
-
-            //Update User Object
-            loadingDialogue.show("Please Wait", "Saving User Details");
-            FirebaseAuth
-                    .getInstance()
-                    .createUserWithEmailAndPassword(model.getEmailAddress(), password)
-                    .addOnCompleteListener(task -> {
-                        if (task.isSuccessful()) {
-                            model.setUID(Objects.requireNonNull(task.getResult().getUser()).getUid());
-                            FirebaseFirestore firebaseFirestore = FirebaseFirestore.getInstance();
-                            firebaseFirestore
-                                    .collection(FirebaseDataKeys.USERS)
-                                    .document(model.getUID())
-                                    .set(model)
-                                    .addOnCompleteListener(task1 -> {
-                                        if (task1.isSuccessful()) {
-                                            Toast.makeText(requireActivity(), "User Registration Successful", Toast.LENGTH_SHORT).show();
-                                            UserLive.currentLoggedInUser = model;
-
-                                            getActivity()
-                                                    .getSupportFragmentManager()
-                                                    .beginTransaction()
-                                                    .addToBackStack("post_register")
-                                                    .replace(R.id.fragment_manager_at_login, OwnerFragmentProfileRegistrationForm.newInstance(model.getUID(), model.getUserType()))
-                                                    .commit();
-                                            loadingDialogue.dismiss();
-
-
-                                        } else {
-                                            Toast.makeText(requireActivity(), "" + task1.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                                            loadingDialogue.dismiss();
-                                        }
-                                    });
-
-                        } else {
-                            Toast.makeText(requireActivity(), "Error Signing UP \n" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
-                            loadingDialogue.dismiss();
-
-                        }
-                    });
-
-        }
     }
 
     @Override
