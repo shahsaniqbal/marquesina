@@ -54,9 +54,10 @@ public class SplashActivity extends AppCompatActivity {
 
     private void performSplashOnUserdataFound(String uid) {
 
+        new FirebaseDataKeys();
         FirebaseFirestore
                 .getInstance()
-                .collection(new FirebaseDataKeys().USERS)
+                .collection(FirebaseDataKeys.USERS)
                 .document(uid)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
