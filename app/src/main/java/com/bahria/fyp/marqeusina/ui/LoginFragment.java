@@ -115,7 +115,7 @@ public class LoginFragment extends Fragment {
                             if (task.isSuccessful()) {
                                 FirebaseFirestore
                                         .getInstance()
-                                        .collection(new FirebaseDataKeys().getUsersRef())
+                                        .collection(new FirebaseDataKeys().USERS)
                                         .document(task.getResult().getUser().getUid())
                                         .get()
                                         .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {

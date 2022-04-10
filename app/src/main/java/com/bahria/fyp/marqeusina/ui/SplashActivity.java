@@ -56,7 +56,7 @@ public class SplashActivity extends AppCompatActivity {
 
         FirebaseFirestore
                 .getInstance()
-                .collection(new FirebaseDataKeys().getUsersRef())
+                .collection(new FirebaseDataKeys().USERS)
                 .document(uid)
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
